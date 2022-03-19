@@ -1,15 +1,15 @@
 ﻿'use strict';
 
-//create conexion with signalR
+//create concection with signalR
 const connection = CreateConnection();
 
 //function that receive messages from server hub
 GetMessageServer();
 //function to send message to server hub
 SetMessageServer();
-//Start conection with server
+//Start connection with server
 StartConnection();
-
+//set keydown in pages
 SetKeyDown();
 
 //#region Create connexion with server
