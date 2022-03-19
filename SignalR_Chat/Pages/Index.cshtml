@@ -1,0 +1,58 @@
+﻿@page
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<link rel="stylesheet" type="text/css" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
+
+<div style="margin-left:33%; width: 30%; padding: 0.5%">
+
+    <div class="col-md-12 text-center" style="background-color: #336EFF; color: white;">
+        <h1>Chat c# - SignalR</h1>
+    </div>
+
+    <div class="container">
+        <div class="row">&nbsp;</div>
+
+        <div class="row">
+            <div class="row">
+                <label><b>Usuario</b></label>
+            </div>
+
+            <div class="row">
+                <input type="text" id="txtUser" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">
+           <div class="row">
+                <label><b>Mensagem</b></label>
+            </div>
+
+             <div class="row">
+                <input type="text" id="txtMessage" class="form-control" />
+            </div>
+        </div>
+
+        <div class="row">&nbsp;</div>
+
+        <div class="row">
+            
+            <input id="btnMessage" class="btn btn-block" style="background-color: #336EFF; color: white;" type="button"  value="Enviar Mensagem" />
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-12">
+            <hr />
+        </div>
+    </div>
+
+    <div class="row" contenteditable="true">
+        <textarea id="messageList" class="form-control" rows="5" disabled="disabled" escape="false"></textarea>
+    </div>
+</div>
+<script src="~/lib/jquery/dist/jquery.min.js"></script>
+<script src="~/js/signalr/dist/browser/signalr.js"></script>
+<script src=~/js/chat.js></script>
